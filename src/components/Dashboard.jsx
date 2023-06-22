@@ -1,5 +1,6 @@
 import React from 'react'
 import Sidebar from './Sidebar';
+import Header from './Header';
 import '../styles/dashboard.scss';
 import {BrowserRouter as Router} from "react-router-dom";
 
@@ -12,7 +13,7 @@ const Dashboard = () => {
         </div>
       </Router>
         <div className='right'>
-          right
+          <Header/>
         </div>
 
     </div>
