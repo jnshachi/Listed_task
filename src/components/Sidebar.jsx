@@ -5,9 +5,10 @@ import { ReactComponent as SettingIcon } from '../assets/setting_icon.svg';
 import { ReactComponent as UserIcon } from '../assets/user_icon.svg';
 import "../styles/sidebar.scss";
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Sidebar = () => {
+    let naviagte=useNavigate();
   return (
     <aside className="sidebar">
         <div className = "sidebar-heading">
@@ -15,43 +16,41 @@ const Sidebar = () => {
         </div>
         <div className="sidebarNav">
             <ul>
-                <li className='nav-items'>
-                    <Link to ="/dashboard">
+                <li className='nav-items' onClick={(e)=>naviagte("/dashboard")}>
+                    
                         <DashboardIcon className ='nav-icons'/>
                         DASHBOARD  
-                    </Link>
+                    
                 </li>
-                <li className='nav-items '>
-                    <Link to ="/transaction">
-                        <TransactionIcon  className ='nav-icons'/>
+                <li className='nav-items ' onClick={(e)=>naviagte("/transaction")}>
+                    
+                        <TransactionIcon  className ='nav-icons' />
                         TRANSACTION
-                    </Link>
+                   
                 </li>
-                <li className='nav-items'>
-                    <Link to= "/schedule">
+                <li className='nav-items' onClick={(e)=>naviagte("/schedule")}>
+                  
                         <ScheduleIcon  className ='nav-icons'/>
                         SCHEDULE
-                    </Link>
+                    
                 </li>
-                <li className='nav-items'>
-                    <Link to= "/user">
+                <li className='nav-items' onClick={(e)=>naviagte("/user")}>
+                   
                         <UserIcon  className ='nav-icons'/>
                         USER
-                    </Link>
                 </li>
-                <li className='nav-items'>
-                    <Link to ="/setting">
+                <li className='nav-items' onClick={(e)=>naviagte("/setting")}>
+                  
                         <SettingIcon className ='nav-icons'/>
                         SETTING
-                    </Link>
                 </li>
                 
             </ul>
         </div>
         <div className='end-object'>
             <ul>
-                <li>Help</li>
-                <li>Contact Us</li>
+                <li onClick={(e)=>naviagte("/help")}>Help</li>
+                <li onClick={(e)=>naviagte("/contact-us")}>Contact Us</li>
             </ul>
         </div>
     </aside>

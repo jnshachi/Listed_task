@@ -5,17 +5,20 @@ import { ReactComponent as BellIcon } from '../assets/bell.svg';
 
 
 const Header = () => {
+  const MyBackgroundImage="https://avatars.githubusercontent.com/u/78901753?v=4";
   return (
-    <header>
+    <header className='header-outer'>
         <div className='heading'>Dashboard</div>
-        <div className='search'>
+         <div className="header-right">
+         <div className='search'>
             <input type ='text' placeholder='Search...'></input>
             <div className='icon-container'>
                 <SearchIcon/>
             </div>
         </div>
         <div className='bell'><BellIcon/></div>
-        <div className='profile'> img </div>
+        <div className='profile' style={{backgroundImage: `url(${MyBackgroundImage})`}}> </div>
+         </div>
         
     </header>
   )

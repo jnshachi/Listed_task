@@ -1,7 +1,9 @@
 @import './font.scss';
 
 header{
+    padding:10px;
     background-color: pink;
+    color: black;
     height: 2rem;
     width: 100%;
     display: flex;
@@ -13,7 +15,8 @@ header{
         font-family: $font-montserrat;
         font-weight: 600;
         font-size: 1.5rem;
-
+        //  background-color: aqua;
+         flex:0.7;
     }
     .search{
         display: flex;
@@ -33,4 +36,25 @@ header{
             border-radius: 0 5px 5px 0;
         }
     }
+}
+
+.header-right{
+    flex:0.3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // background-color: yellow;
+}
+
+.profile{
+   width: 12%;
+   background-color: red;
+   height: 120%;
+   border-radius: 50%;
+//    background-image: url("https://avatars.githubusercontent.com/u/78901753?v=4");
+   
+   background-position: center; /* Center the image */
+   background-repeat: no-repeat; /* Do not repeat the image */
+   background-size: cover; 
+   
 }

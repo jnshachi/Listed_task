@@ -31,7 +31,8 @@
     
     .nav-items{
         padding: 0.875rem;
-
+        cursor: pointer; 
+        
         .nav-icons{
             margin-right: 1.31rem;
         }
@@ -51,4 +52,9 @@
         }
     }
     
+}
+
+
+.end-object>ul>li{
+    cursor: pointer;
 }
