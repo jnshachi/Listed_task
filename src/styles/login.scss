@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.half {
+  flex: 1;
+}
+
+.right {
+  background-color: white;
+}
+
+.left {
+  background-color: black;
+}

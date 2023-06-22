@@ -1,0 +1,54 @@
+@import './font.scss';
+
+.sidebar{
+    background-color: black;
+    width: 16.5rem;
+    height: 41rem;
+    flex-shrink: 0;
+    border-radius: 30px;
+    margin: 2rem 0 2rem 2rem; 
+    font-family: $font-montserrat;  
+    color: white;
+}
+
+.board{
+    position: absolute;
+    top: 3.75rem;
+    margin-left: 2.12rem;
+    padding: 1rem;
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.sidebarNav{
+    margin-left: 2.12rem ;
+    font-size: 1.025rem;
+
+    ul{
+        padding-top:8.12rem ;
+        list-style: none;
+    }
+    
+    .nav-items{
+        padding: 0.875rem;
+
+        .nav-icons{
+            margin-right: 1.31rem;
+        }
+        text-decoration: none;
+    }
+
+}
+
+.end-object{
+    ul{
+        padding-top: 8.86rem;
+    
+        li{
+            list-style: none;
+            padding-top: 1.25rem;
+            margin-left: 2.12rem ;
+        }
+    }
+    
+}
