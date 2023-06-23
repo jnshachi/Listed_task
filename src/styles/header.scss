@@ -1,11 +1,10 @@
 @import './font.scss';
 
 header{
-    padding:10px;
-    background-color: pink;
+    padding: 10px;
+    //background-color: pink;
     color: black;
     height: 2rem;
-    width: 100%;
     display: flex;
     justify-content: space-between;
 
@@ -16,45 +15,49 @@ header{
         font-weight: 600;
         font-size: 1.5rem;
         //  background-color: aqua;
-         flex:0.7;
+        flex:0.8;
     }
-    .search{
+    .header-right{
+        flex:0.3;
         display: flex;
-        justify-content: space-between;
-        margin-right: 1rem;
-        input{
-            outline: none;
-            border: none;
-            padding: 0.5rem;
-            font-size: $font-xs;
-            border-radius: 5px 0 0 5px;
-            margin-left: 0;
+        justify-content: space-around;
+        align-items: center;
+        //background-color: yellow;
+
+        .search{
+            display: flex;
+            justify-content: space-between;
+            margin-right: 1rem;
+            input{
+                outline: none;
+                border: none;
+                padding: 0.5rem;
+                font-size: $font-xs;
+                border-radius: 5px 0 0 5px;
+                margin-left: 0;
+            }
+            .icon-container{
+                background-color: white;
+                padding: 0.45rem;
+                border-radius: 0 5px 5px 0;
+            }
         }
-        .icon-container{
-            background-color: white;
-            padding: 0.45rem;
-            border-radius: 0 5px 5px 0;
+        
+        
+        .profile{
+           width: 12%;
+           background-color: red;
+           height: 120%;
+           border-radius: 50%;
+        //    background-image: url("https://avatars.githubusercontent.com/u/78901753?v=4");
+           
+           background-position: center; /* Center the image */
+           background-repeat: no-repeat; /* Do not repeat the image */
+           background-size: cover; 
+           
         }
     }
+    
 }
 
-.header-right{
-    flex:0.3;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    // background-color: yellow;
-}
 
-.profile{
-   width: 12%;
-   background-color: red;
-   height: 120%;
-   border-radius: 50%;
-//    background-image: url("https://avatars.githubusercontent.com/u/78901753?v=4");
-   
-   background-position: center; /* Center the image */
-   background-repeat: no-repeat; /* Do not repeat the image */
-   background-size: cover; 
-   
-}
