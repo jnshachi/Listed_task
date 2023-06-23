@@ -9,16 +9,44 @@ import { ReactComponent as CameraIcon } from '../../assets/camera.svg';
 import { ReactComponent as LikeIcon } from '../../assets/likes.svg';
 import { ReactComponent as TransactionIcon } from '../../assets/transaction_icon_black.svg';
 import { ReactComponent as PeopleIcon } from '../../assets/people.svg';
+import TimeLine from '../linechart/TimeLine';
+import PieChartComponent  from "../linechart/PieChartComponent"
+
+
+
+const data = [
+  { name: "Basic Tree", value: 55, fill: "#8884d8" },
+  { name: "Custom Hot Pant", value: 31, fill: "rgb(236, 232, 26)" },
+  { name: "Super Hoodies", value: 14, fill: "rgb(150, 200, 56)" },
+ 
+];
+
+//  sample Lines Data
+const Scheme = [
+  {
+    dataKey: "Basic Tree",
+    stroke: "#8884d8",
+  },
+  {
+    dataKey: "Custom Hot Pant",
+    stroke: "rgb(236, 232, 26)",
+  },
+  {
+    dataKey: "Super Hoodies",
+    stroke: "rgb(150, 200, 56)",
+  },
+ 
+];
 
 
 const Dashboard = ({imageUrl}) => {
   return (
     <div className='dashboard_main'>
-      <Router>
+     <Router>
         <div className='left'>
           <Sidebar/>
         </div>
-      </Router>
+        </Router>
         <div className='right'>
           <Header imageUrl={imageUrl}/>
           <div className="card-container">
@@ -48,9 +76,36 @@ const Dashboard = ({imageUrl}) => {
             />
           </div>
 
-          <div className='line-graph-container'></div>
+          
+         <TimeLine />
+          
           <div className='dashboard-last'>
-            <div className='pie'></div>
+            <div className='pie'>
+  
+            <div className="linechartoutercontainer threechartconatiner newpie">
+
+            <div className="piechartcontainer">
+        <div className="piecharthead">
+          <div className=" headsecleft headingtext">
+            Top Products
+            
+          </div>
+
+          <button style={{border:"0px",fontWeight:"normal"}}>
+            May-June 2021 
+          </button>
+        </div>
+
+        <PieChartComponent data={data} scheme={Scheme} />
+      </div>
+            
+
+
+
+
+            </div>
+            </div>
+
 
             <div className='todo-container'>
               <div className='todo-list'>

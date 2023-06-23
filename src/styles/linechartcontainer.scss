@@ -1,0 +1,225 @@
+@import './font.scss';
+
+.linechartoutercontainer {
+  background: #ffffff;
+
+  /* border: 2px solid #e4e4e7; */
+  border-radius: 10px;
+  /* margin: 10px; */
+  /* margin-top: 20px; */
+  /* margin-left: 2px; */
+  width: 90% !important;
+  /* margin-left: 2.8vw; */
+  padding-top: 10px;
+  /* background-color: aqua !important; */
+
+  margin: 1.5rem 1rem 1rem 2rem ;
+  height: 25rem;
+  width: auto;
+  padding: 1.5rem;
+  padding-top: 10px;
+  background-color: white;
+  border-radius: 30px !important;
+  font-family: $font-montserrat !important;
+}
+
+.conatinershadow {
+  background: #ffffff;
+//   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+.headersec {
+   margin-top: 1rem; 
+  margin-left: 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.headsecleft {
+  flex: 0.3;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.headsecright {
+  flex: 0.6539;
+  /* background-color: aliceblue; */
+  display: flex;
+  justify-content: flex-end;
+}
+.headsecright > button {
+  background: #ffffff;
+  padding: 8px;
+  margin-left: 40px;
+  border: 0px solid #a1a1aa;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+.legendsection {
+  display: flex;
+  /* justify-content: space-between; */
+  /* margin-top: 10px; */
+  /* margin-left:60px; */
+  align-items: center;
+//   background-color: aqua;
+}
+.legendsection > div {
+  display: flex;
+
+  align-items: center;
+//   margin-left: 60px;
+margin-bottom: 10px;
+padding: 10px;
+ font-weight: 700;
+ width: 100%;
+  gap: 10px;
+}
+
+.headersecsub {
+//   margin-top: 10px;
+margin-bottom: 3rem;
+//   margin-left: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .headersec {
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .headsecleft {
+    align-self: flex-start;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .headsecright > button {
+    margin-right: 2px;
+    margin-left: 2px;
+  }
+
+  .legendsection {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 10px;
+    align-items: flex-start;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  }
+  .legendsection > div {
+    display: flex;
+    width: 45%;
+    align-items: center;
+    margin-left: 10px;
+    gap: 10px;
+  }
+
+  .headersecsub {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: block;
+    justify-content: flex-start;
+  }
+  .linechartoutercontainer {
+    margin-left: 2.4vw;
+  }
+}
+
+/* div2 3charts */
+.threechartconatiner {
+  display: flex;
+  border: 0px;
+  /* height: 60vh; */
+  justify-content: space-between;
+  background-color: transparent;
+}
+.piechartcontainer {
+  width: 45%;
+  height: max-content;
+// background-color: black !important;
+  padding-left: 40px;
+  padding-right: 40px;
+  background: #ffffff;
+//   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+//   margin-top: 10px;
+//   margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.percentchartcontainer {
+  width: 45%;
+  margin-left: 20px;
+}
+
+.incrementchartcontainer {
+  width: 20%;
+  margin-left: 20px;
+}
+@media screen and (max-width: 1300px) {
+  .piechartcontainer {
+    width: 100%;
+    height: 70vh;
+
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .threechartconatiner {
+    flex-direction: column;
+    padding-left: 0px;
+  }
+  .percentchartcontainer {
+    width: 100%;
+    margin-left: 0px;
+    height: max-content;
+  }
+  .incrementchartcontainer {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+/* stacked bar chart css */
+
+.stackedbarchartconatiner {
+  height: 70vh;
+}
+
+.barchartouter {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+  .stackedbarchartconatiner {
+    height: 73vh;
+  }
+}
+
+/* double percent chart container */
+
+.doublepercentchartcontainer {
+  height: min-content;
+}
+
+/* vertical stacked bar css */
+.verticalsatckedbar {
+  width: 60%;
+  height: max-content;
+}
+
+.Verticalstackedchart {
+  height: 80vh !important;
+}
+
+@media screen and (max-width: 1300px) {
+  .verticalsatckedbar {
+    width: 95%;
+  }
+}

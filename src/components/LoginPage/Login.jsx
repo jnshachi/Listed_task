@@ -6,6 +6,7 @@ import jwt_decode from 'jwt-decode';
 const Login = ({ onLogin }) => {
   const handleSuccess = (credentialResponse) => {
     var decoded = jwt_decode(credentialResponse.credential);
+    
     const imageUrl = decoded.picture;
     console.log(decoded);
     onLogin(imageUrl);  

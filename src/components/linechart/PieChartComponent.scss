@@ -1,0 +1,69 @@
+@import '../../styles/font.scss';
+
+.pieouter {
+    width: 90% !important;
+    // background-color: #1e1e1e;
+    height: 35vh;
+    
+    display: flex;
+    align-items: center;
+  }
+  
+  .pielegend {
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+    margin-top: 10px;
+    // margin-right: 10px;/
+    /* width: 20%; */
+    /* background-color: red; */
+  }
+  
+  .subtext {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    /* identical to box height */
+  
+    color: #1e1e1e;
+  }
+  
+  .piecharthead {
+    display: flex;
+    margin-top: 10px;
+    border-bottom: 2px solid #ececec;
+  }
+  
+  .piecharthead > button {
+    background: #ffffff;
+    padding: 8px;
+    border: 1px solid #a1a1aa;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    align-self: flex-start;
+  }
+  .headingtext {
+    flex: 0.98;
+  }
+  .threechartconatiner{
+    // background-color: aqua;
+   margin:0px !important;
+  }
+
+  
+  
+  @media screen and (max-width: 1300px) {
+    .pieouter {
+      flex-direction: column;
+      height: 55vh;
+    }
+    .pieresponsive {
+      margin-left: 100px !important;
+    }
+    .pielegend {
+      flex-direction: row;
+    }
+  }
+  

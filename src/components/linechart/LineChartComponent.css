@@ -1,0 +1,52 @@
+.Linechartcontainer {
+    width: 97%;
+    height: 15rem;
+    /* background-color: #344054; */
+    /* margin-top: 20px; */
+  }
+  
+  .custom-tooltip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: #344054;
+    border-radius: 8px;
+    opacity: 0.7;
+  }
+  
+  .custom-tooltip .tooltip-bg {
+    background-color: var(--dark-1);
+    padding: 10px 15px;
+  }
+  
+  .custom-tooltip .tooltip-bg .text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    /* identical to box height, or 150% */
+  
+    text-align: left;
+  
+    /* Gray/700 */
+  
+    color: #ffffff;
+    text-transform: capitalize;
+  }
+  
+  .recharts-default-legend {
+    text-transform: capitalize;
+  }
+  @media screen and (max-width: 1300px) {
+    .Linechartcontainer {
+      width: 95%;
+      padding-right: 20px !important;
+    }
+  
+    .recharts-default-legend {
+      /* background-color: aquamarine; */
+      margin-left: 60px !important;
+    }
+  }
+  
