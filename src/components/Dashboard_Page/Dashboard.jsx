@@ -11,7 +11,7 @@ import { ReactComponent as TransactionIcon } from '../../assets/transaction_icon
 import { ReactComponent as PeopleIcon } from '../../assets/people.svg';
 
 
-const Dashboard = () => {
+const Dashboard = ({imageUrl}) => {
   return (
     <div className='dashboard_main'>
       <Router>
@@ -20,7 +20,7 @@ const Dashboard = () => {
         </div>
       </Router>
         <div className='right'>
-          <Header/>
+          <Header imageUrl={imageUrl}/>
           <div className="card-container">
             <Card
               icon= {<CameraIcon/>}

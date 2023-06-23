@@ -4,8 +4,7 @@ import { ReactComponent as SearchIcon } from '../../assets/search_icon.svg';
 import { ReactComponent as BellIcon } from '../../assets/bell.svg';
 
 
-const Header = () => {
-  const MyBackgroundImage="https://avatars.githubusercontent.com/u/78901753?v=4";
+const Header = ({ imageUrl }) => {
   return (
     <header className='header-outer'>
         <div className='heading'>Dashboard</div>
@@ -17,7 +16,7 @@ const Header = () => {
               </div>
           </div>
           <div className='bell'><BellIcon/></div>
-          <div className='profile' style={{backgroundImage: `url(${MyBackgroundImage})`}}> </div>
+          <div className='profile' style={{backgroundImage: `url(${ imageUrl })`}}> </div>
         </div>
         
     </header>
