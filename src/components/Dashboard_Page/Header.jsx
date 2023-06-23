@@ -1,7 +1,7 @@
 import React from 'react'
-import '../styles/header.scss'
-import { ReactComponent as SearchIcon } from '../assets/search_icon.svg';
-import { ReactComponent as BellIcon } from '../assets/bell.svg';
+import '../../styles/header.scss'
+import { ReactComponent as SearchIcon } from '../../assets/search_icon.svg';
+import { ReactComponent as BellIcon } from '../../assets/bell.svg';
 
 
 const Header = () => {

@@ -1,14 +1,14 @@
 import React from 'react'
 import Sidebar from './Sidebar';
 import Header from './Header';
-import '../styles/dashboard.scss';
+import '../../styles/dashboard.scss';
 import {BrowserRouter as Router} from "react-router-dom";
 import Card from './Card';
 
-import { ReactComponent as CameraIcon } from '../assets/camera.svg';
-import { ReactComponent as LikeIcon } from '../assets/likes.svg';
-import { ReactComponent as TransactionIcon } from '../assets/transaction_icon_black.svg';
-import { ReactComponent as PeopleIcon } from '../assets/people.svg';
+import { ReactComponent as CameraIcon } from '../../assets/camera.svg';
+import { ReactComponent as LikeIcon } from '../../assets/likes.svg';
+import { ReactComponent as TransactionIcon } from '../../assets/transaction_icon_black.svg';
+import { ReactComponent as PeopleIcon } from '../../assets/people.svg';
 
 
 const Dashboard = () => {

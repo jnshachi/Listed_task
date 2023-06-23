@@ -1,9 +1,9 @@
-import { ReactComponent as DashboardIcon } from '../assets/dashboard_icon.svg';
-import { ReactComponent as TransactionIcon } from '../assets/transaction_icon.svg';
-import { ReactComponent as ScheduleIcon } from '../assets/schedule_icon.svg';
-import { ReactComponent as SettingIcon } from '../assets/setting_icon.svg';
-import { ReactComponent as UserIcon } from '../assets/user_icon.svg';
-import "../styles/sidebar.scss";
+import { ReactComponent as DashboardIcon } from '../../assets/dashboard_icon.svg';
+import { ReactComponent as TransactionIcon } from '../../assets/transaction_icon.svg';
+import { ReactComponent as ScheduleIcon } from '../../assets/schedule_icon.svg';
+import { ReactComponent as SettingIcon } from '../../assets/setting_icon.svg';
+import { ReactComponent as UserIcon } from '../../assets/user_icon.svg';
+import "../../styles/sidebar.scss";
 import React from 'react';
 import {useNavigate } from 'react-router-dom';
 

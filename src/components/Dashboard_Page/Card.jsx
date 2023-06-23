@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/card.scss';
+import '../../styles/card.scss';
 
 const Card = ({ icon, boldText, smallText, bgColor }) => {
     return (
