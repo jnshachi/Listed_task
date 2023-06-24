@@ -5,6 +5,7 @@ const Card = ({ icon, boldText, smallText, bgColor }) => {
     return (
       <div className="card" style={{ backgroundColor: bgColor }}>
         <div className="icon-container">
+          
           {icon}
         </div>
         <div className="text-container">
